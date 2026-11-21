@@ -222,7 +222,7 @@
     <div class="wrap contact-box">
       <div>
         <span class="num">04 — Contact</span>
-        <h2>Une date en tête ? <em>Parlons-en.</em></h2>
+        <h2>Une date en tête ? <em>Parlons&#8209;en.</em></h2>
         <p style="margin:20px 0 30px;color:var(--muted);max-width:460px">Réponse rapide sur WhatsApp. Pensez à réserver tôt pour les week-ends de mariage.</p>
         <a class="btn btn-solid js-wa" href="#">Écrire à Emma sur WhatsApp</a>
       </div>
@@ -270,7 +270,7 @@
   PHOTOS.forEach(p => {
     const f = document.createElement("figure");
     f.dataset.cat = p.cat;
-    f.innerHTML = `<div class="ph" style="--r:${p.r}" data-label="${p.titre}">${p.src ? `<img src="${p.src}" alt="${p.titre}" loading="lazy">` : ""}</div><figcaption>${p.titre}</figcaption>`;
+    f.innerHTML = `<div class="ph" style="--r:${p.r}">${p.src ? `<img src="${p.src}" alt="${p.titre}" loading="lazy">` : ""}</div><figcaption>${p.titre}</figcaption>`;
     if (p.src) f.addEventListener("click", () => openLb(p.src, p.titre));
     grid.appendChild(f);
   });
